@@ -1,20 +1,81 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Sawadina Website
 
-# Run and deploy your AI Studio app
+Proyek website resmi untuk **Sawadina Wedding** — vendor pernikahan premium berbasis di Garut, Jawa Barat. Mencakup layanan Wedding Organizer (Sawadina WO) dan Dokumentasi (Hakuna Picture).
 
-This contains everything you need to run your app locally.
+Dibuat oleh **hmnf31**.
 
-View your app in AI Studio: https://ai.studio/apps/aa17fbd8-cc08-4e56-8820-27bb37f9b1f0
+## Fitur
 
-## Run Locally
+- Landing page dengan hero interaktif
+- Halaman Wedding Organizer dengan daftar paket, vendor, dan venue
+- Halaman Dokumentasi Hakuna Picture dengan paket dokumentasi dan galeri
+- Navigasi responsif dengan mobile menu
+- Integrasi WhatsApp untuk pemesanan dan konsultasi
+- Animasi halus dengan Motion (Framer Motion)
+- Desain modern dengan Tailwind CSS v4
 
-**Prerequisites:**  Node.js
+## Teknologi
 
+| Teknologi | Keterangan |
+|-----------|------------|
+| **React 19** | Library UI |
+| **TypeScript** | Bahasa pemrograman |
+| **Vite 6** | Build tool & dev server |
+| **Tailwind CSS v4** | Utility-first CSS framework |
+| **Motion** | Animasi (sebelumnya Framer Motion) |
+| **React Router DOM v7** | Routing SPA |
+| **Lucide React** | Ikon |
+| **Vite** | Development & production build |
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Struktur Proyek
+
+```
+src/
+├── main.tsx                  # Entry point React
+├── App.tsx                   # Routing (/, /organizer, /documentation)
+├── index.css                 # Tailwind CSS & custom theme
+├── constants.ts              # Gambar & warna
+├── components/
+│   ├── Navbar.tsx            # Navigasi atas
+│   └── Footer.tsx            # Footer
+└── pages/
+    ├── LandingPage.tsx       # Halaman utama
+    ├── OrganizerPage.tsx     # Halaman Wedding Organizer
+    └── DocumentationPage.tsx # Halaman Hakuna Picture
+```
+
+## Cara Penggunaan
+
+**Prasyarat:** Node.js
+
+1. Clone repositori:
+   ```bash
+   git clone https://github.com/hmnf31/sawdinaweb.git
+   cd sawdinaweb
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Jalankan dev server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build untuk production:
+   ```bash
+   npm run build
+   ```
+
+5. Preview build:
+   ```bash
+   npm run preview
+   ```
+
+Akses di **http://localhost:3000**
+
+## Kredit
+
+Seluruh gambar, desain, dan konten dalam proyek ini adalah hak milik **hmnf31**. Dilarang menggunakan tanpa izin.
