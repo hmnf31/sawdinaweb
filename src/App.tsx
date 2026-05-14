@@ -33,7 +33,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/sawdinaweb">
       <AnimatedRoutes />
     </Router>
   );
