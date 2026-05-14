@@ -76,6 +76,41 @@ src/
 
 Akses di **http://localhost:3000**
 
+## Deploy ke GitHub Pages
+
+Proyek ini sudah terdeploy dan bisa diakses di:
+
+**https://hmnf31.github.io/sawdinaweb/**
+
+### Manual Deploy
+
+1. Pastikan `base` di `vite.config.ts` sudah sesuai dengan nama repo:
+   ```ts
+   base: '/sawdinaweb/',
+   ```
+
+2. Pastikan `basename` di `src/App.tsx` sudah sesuai:
+   ```tsx
+   <Router basename="/sawdinaweb">
+   ```
+
+3. Install `gh-pages`:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+4. Jalankan deploy:
+   ```bash
+   npm run deploy
+   ```
+
+5. Di repo GitHub, buka **Settings > Pages > Branch** pilih `gh-pages` dan folder `/ (root)`.
+
+### Catatan
+
+- Setiap kali ada perubahan, jalankan `npm run deploy` untuk memperbarui halaman.
+- Akses development lokal melalui `http://localhost:3000/sawdinaweb/`.
+
 ## Kredit
 
 Seluruh gambar, desain, dan konten dalam proyek ini adalah hak milik **hmnf31**. Dilarang menggunakan tanpa izin.
